@@ -1,0 +1,22 @@
+{
+  "name": "quizAppServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "pm2 start index.js --name quizAppServer",
+    "reload": "pm2 reload quizAppServer",
+    "stop": "pm2 stop quizAppServer",
+    "trash": "pm2 delete quizAppServer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
